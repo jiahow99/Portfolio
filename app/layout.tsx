@@ -1,14 +1,14 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { poppins } from '@/fonts/fonts'
-
+import 'aos/dist/aos.css'; 
 
 export const metadata: Metadata = {
   title: 'Kah How - Software Developer',
   description: 'Explore my portfolio showcasing software development skills and projects.',
 }
 
-export default function RootLayout({children}:any) {
+export default function RootLayout({children}:any) {  
   return (
     <html lang="en">
       <body className={poppins.className}>{children}</body>
