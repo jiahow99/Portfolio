@@ -9,6 +9,7 @@ body {
   background-attachment: fixed;
   color: white;
   scroll-behavior: smooth;
+  cursor: none;
 }
 
 .down-line {
@@ -21,6 +22,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 /*************** Primary button ***************/
 .buttonn {

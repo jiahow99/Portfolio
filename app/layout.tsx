@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { poppins } from '@/fonts/fonts'
 import 'aos/dist/aos.css'; 
+import Cursor from '@/components/Cursor';
 
 export const metadata: Metadata = {
   title: 'Kah How - Software Developer',
@@ -10,8 +11,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}:any) {  
   return (
-    <html lang="en">
-      <body className={poppins.className}>{children}</body>
+    <html lang="en">      
+      <body className={poppins.className}>
+        <Cursor />
+        {children}
+      </body>
     </html>
   )
 }
