@@ -1,4 +1,5 @@
-import Link from "next/link";
+/* eslint-disable @next/next/no-img-element */
+'use client'
 import { HiOutlineMail } from "react-icons/hi";
 import { LuPhone } from "react-icons/lu";
 import { FaFacebook } from "react-icons/fa";
@@ -26,11 +27,10 @@ export default function Footer() {
         {/* Profile */}
         <div className="flex flex-col gap-3">
           {/* Image */}
-          <Image 
-            src="/images/profile.png" 
-            width={70} 
-            height={70} alt="profile" 
-            className="rounded-full" 
+          <img 
+            src="/images/profile3.png" 
+            className="rounded-full w-16 h-16 object-cover" 
+            alt="profile" 
           />
 
           {/* Email */}

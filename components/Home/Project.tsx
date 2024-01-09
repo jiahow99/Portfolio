@@ -5,7 +5,7 @@ import PrimaryBtn from "../PrimaryBtn";
 import { PiYoutubeLogoFill } from "react-icons/pi";
 
 export default function Project({project}: any) {
-  const {youtube, src, title, description, href} = project;
+  const {youtube, src, title, description, href, link} = project;
 
   return (
     <div className="bg-secondary p-5 pb-3 rounded-lg">
@@ -28,10 +28,15 @@ export default function Project({project}: any) {
         <p className="text-sm mt-2 line-clamp-2 ">{description}</p>
         {!Array.isArray(href) ? (
           // Code link
-          <PrimaryBtn href={href[0]}>
-            Code 
-            <Image src="/icons/code.png" width={24} height={24} alt="code" />
-          </PrimaryBtn>
+          <div className="flex gap-2 items-end">
+            <PrimaryBtn href={href[0]}>
+              Code 
+              <Image src="/icons/code.png" width={24} height={24} alt="code" />
+            </PrimaryBtn>
+            <Link href={link} className="border-2 border-white/40 h-fit px-6 py-2 rounded-full hover:border-white duration-300 group ease-in-out">
+              <p className="font-semibold text-white/80 group-hover:text-white">View</p>
+            </Link>
+          </div>
         ):(
           <div className="flex gap-3">
             {/* Code link */}

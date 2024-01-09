@@ -3,7 +3,7 @@ import ExperienceCard from "./ExperienceCard";
 
 export default function Experiences() {
   return (
-    <div id="experiences" className="w-full mt-28 flex flex-col gap-3">
+    <div id="experiences" className="w-full pt-28 flex flex-col gap-3">
         {/* Titles */}
         <p data-aos="fade-left" className="font-medium">WHAT I HAVE DONE SO FAR</p>
         <p data-aos="fade-left" className="text-5xl font-semibold">EXPERIENCE.</p>

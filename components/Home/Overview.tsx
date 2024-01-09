@@ -6,7 +6,7 @@ import ViewMyStack from "./ViewMyStack";
 
 export default function Overview() {
   return (
-    <div id="overview" className="w-full mt-28 flex flex-col gap-3">
+    <div id="overview" className="w-full pt-28 flex flex-col gap-3">
         {/* Titles */}
         <p data-aos="fade-left" className="font-medium">INTRODUCTION</p>
         <p data-aos="fade-left" className="text-5xl font-semibold">Overview.</p>

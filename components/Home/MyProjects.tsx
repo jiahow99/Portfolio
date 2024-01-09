@@ -12,7 +12,7 @@ export default function MyProjects() {
     const [active, setActive] = useState('All')
 
     return (
-        <div id="projects" className="w-full mt-28 flex flex-col gap-3">
+        <div id="projects" className="w-full pt-28 flex flex-col gap-3">
             {/* Titles */}
             <p data-aos="fade-left" className="font-medium">MY WORK</p>
             <p data-aos="fade-left"  className="text-5xl font-semibold">Projects.</p>

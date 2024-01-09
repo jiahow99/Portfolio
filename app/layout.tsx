@@ -3,6 +3,8 @@ import './globals.css'
 import { poppins } from '@/fonts/fonts'
 import 'aos/dist/aos.css'; 
 import Cursor from '@/components/Cursor';
+import Navbar from '@/components/Home/Navbar';
+import Footer from '@/components/Home/Footer';
 
 export const metadata: Metadata = {
   title: 'Kah How - Software Developer',
@@ -13,8 +15,15 @@ export default function RootLayout({children}:any) {
   return (
     <html lang="en">      
       <body className={poppins.className}>
+        
         <Cursor />
+        
+        <Navbar />
+
         {children}
+
+        <Footer />
+
       </body>
     </html>
   )

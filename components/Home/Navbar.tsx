@@ -1,9 +1,13 @@
+'use client'
 import Image from "next/image";
-import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import { FaFacebook, FaInstagram , FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 export default function Navbar() {
+    const pathname = usePathname();
+    const router = useRouter();
+
     // Smooth scroll effect
     const smoothScroll = (targetId: string) => {
         const targetElement = document.getElementById(targetId);
@@ -12,30 +16,38 @@ export default function Navbar() {
             top: targetElement.offsetTop,
             behavior: 'smooth',
         });
+        } else {
+            router.push('/#'+targetId);
         }
     };
 
+    // Link active class
+    const active = "underline underline-offset-8 text-[#37C2D4]";
+    const inactive = "hover:text-[#37C2D4] duration-300 ease-out]";
+
+
     return (
-        <nav className="w-full py-5 flex items-center justify-between">
+        <nav className="w-11/12 mx-auto py-5 flex items-center justify-between">
             {/* Photo name */}
             <div className="flex gap-2 items-center font-medium">
-                <Image src="/images/profile.png" width={50} height={50} alt="profile" className="rounded-full" />
+                <img src="/images/profile3.png" alt="profile" className="rounded-full w-16 h-16 object-cover" />
+                {/* <Image src="/images/profile2.jpg" width={90} height={90} alt="profile" className="rounded-full" /> */}
                 {/* <div className="w-10 h-10 rounded-full bg-white"></div> */}
                 <p>Kah How</p>
             </div>
 
             {/* Links */}
             <div className="flex gap-8 ">
-                <button onClick={() => smoothScroll('overview')} className="underline underline-offset-8 text-[#37C2D4]">
+                <button onClick={() => smoothScroll('overview')} className={pathname === '/' ? active : inactive}>
                     Overview
                 </button>
-                <button onClick={() => smoothScroll('experiences')} className=" hover:text-[#37C2D4] duration-300 ease-out">
+                <button onClick={() => smoothScroll('experiences')} className={inactive}>
                     Experiences
                 </button>
-                <button onClick={() => smoothScroll('projects')} className=" hover:text-[#37C2D4] duration-300 ease-out">
+                <button onClick={() => smoothScroll('projects')} className={pathname.startsWith('/project') ? active : inactive}>
                     Projects
                 </button>
-                <button onClick={() => smoothScroll('techstacks')} className=" hover:text-[#37C2D4] duration-300 ease-out">
+                <button onClick={() => smoothScroll('techstacks')} className={inactive}>
                     Tech Stacks
                 </button>
             </div>

@@ -10,6 +10,7 @@ body {
   color: white;
   scroll-behavior: smooth;
   cursor: none;
+  overflow-x: hidden;
 }
 
 .down-line {

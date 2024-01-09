@@ -12,7 +12,7 @@ export default function ProgrammingLanguages() {
   const [active, setActive] = useState('Backend');
 
   return (
-    <div id="techstacks" className="w-full my-28 flex flex-col gap-3">
+    <div id="techstacks" className="w-full py-28 flex flex-col gap-3">
       {/* Titles */}
       <p data-aos="fade-left" className="font-medium">PROGRAMMIGN LANGAUGES</p>
       <p data-aos="fade-left" className="text-5xl font-semibold">My Tech Stack.</p>

@@ -6,6 +6,7 @@ export const websiteProjects = [
                         design through Tailwind CSS.`,
         "src": "/images/moviebites.jpg",
         "href": "https://github.com/jiahow99/Movie-App-Tailwind",
+        "link": "/project/moviebites",
         "youtube": "https://drive.google.com/file/d/1LfHodyOy_HQza4VYGzn0Jif4JuPYMRjc/view",
     },
     {
@@ -15,6 +16,7 @@ export const websiteProjects = [
                         features like real-time payment calculations and Google Maps integration.`,
         "src": "/images/dreambid.jpg",
         "href": "https://github.com/jiahow99/Vue-Listing-App",
+        "link": "/project/dreambid",
         "youtube": "https://www.youtube.com/watch?v=-whHhK3ceSc"
     },
     {
@@ -23,6 +25,7 @@ export const websiteProjects = [
                         NextJS SSR, ReactJS, and Tailwind CSS. Explore the depths of Web 3 technologies!`,        
         "src": "/images/biolink.png",
         "href": "https://github.com/jiahow99/Reactivities-Net7React",
+        "link": "/project/biolink",
         "youtube": "https://www.youtube.com/watch?v=eZ95euAsrPA"
     },
     {
@@ -31,6 +34,7 @@ export const websiteProjects = [
         seamless real-time collaboration.`,        
         "src": "/images/websocket.png",
         "href": "https://github.com/jiahow99/Larave-Echo-Group-Chat",
+        "link": "/project/weavify",
         "youtube": "https://www.youtube.com/watch?v=eZ95euAsrPA"
     }
 ]
@@ -46,6 +50,7 @@ export const mobileProjects = [
             "https://github.com/jiahow99/FYP-APP",
             "https://github.com/jiahow99/FYP-API"
         ],
+        "link": "/location-based-app",
         "youtube": ""
     }
 ]
