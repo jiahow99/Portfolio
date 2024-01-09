@@ -5,6 +5,8 @@ import 'aos/dist/aos.css';
 import Cursor from '@/components/Cursor';
 import Navbar from '@/components/Home/Navbar';
 import Footer from '@/components/Home/Footer';
+import NextNProgress from 'nextjs-progressbar';
+import ScrollToTop from '@/components/ScrollToTop';
 
 export const metadata: Metadata = {
   title: 'Kah How - Software Developer',
@@ -13,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}:any) {  
   return (
-    <html lang="en">      
+    <html lang="en">            
       <body className={poppins.className}>
         
         <Cursor />
@@ -23,6 +25,8 @@ export default function RootLayout({children}:any) {
         {children}
 
         <Footer />
+
+        <ScrollToTop />
 
       </body>
     </html>

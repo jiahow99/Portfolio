@@ -31,14 +31,12 @@ export default function Navbar() {
             {/* Photo name */}
             <div className="flex gap-2 items-center font-medium">
                 <img src="/images/profile3.png" alt="profile" className="rounded-full w-16 h-16 object-cover" />
-                {/* <Image src="/images/profile2.jpg" width={90} height={90} alt="profile" className="rounded-full" /> */}
-                {/* <div className="w-10 h-10 rounded-full bg-white"></div> */}
                 <p>Kah How</p>
             </div>
 
             {/* Links */}
             <div className="flex gap-8 ">
-                <button onClick={() => smoothScroll('overview')} className={pathname === '/' ? active : inactive}>
+                <button onClick={() => smoothScroll('')} className={pathname === '/' ? active : inactive}>
                     Overview
                 </button>
                 <button onClick={() => smoothScroll('experiences')} className={inactive}>
