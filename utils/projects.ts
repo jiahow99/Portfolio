@@ -35,7 +35,7 @@ export const websiteProjects = [
         "src": "/images/websocket.png",
         "href": "https://github.com/jiahow99/Larave-Echo-Group-Chat",
         "link": "/project/weavify",
-        "youtube": "https://www.youtube.com/watch?v=eZ95euAsrPA"
+        "youtube": "https://www.youtube.com/watch?v=Ft6ZwrjFRN8"
     }
 ]
 
