@@ -29,7 +29,7 @@ export default function Project({project}: any) {
         {!Array.isArray(href) ? (
           // Code link
           <div className="flex gap-2 items-end">
-            <PrimaryBtn href={href[0]}>
+            <PrimaryBtn href={href}>
               Code 
               <Image src="/icons/code.png" width={24} height={24} alt="code" />
             </PrimaryBtn>
@@ -38,7 +38,7 @@ export default function Project({project}: any) {
             </Link>
           </div>
         ):(
-          <div className="flex gap-3">
+          <div className="flex gap-3 items-end">
             {/* Code link */}
             <PrimaryBtn href={href[0]}>
               Code 
@@ -49,6 +49,10 @@ export default function Project({project}: any) {
               API 
               <Image src="/icons/code.png" width={30} height={30} alt="code" />
             </PrimaryBtn>
+            {/* View */}
+            <Link href={link} className="border-2 border-white/40 h-fit px-6 py-2 rounded-full hover:border-white duration-300 group ease-in-out">
+              <p className="font-semibold text-white/80 group-hover:text-white">View</p>
+            </Link>
           </div>
         )}
     </div>

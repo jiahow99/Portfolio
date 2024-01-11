@@ -50,7 +50,7 @@ export const mobileProjects = [
             "https://github.com/jiahow99/FYP-APP",
             "https://github.com/jiahow99/FYP-API"
         ],
-        "link": "/location-based-app",
+        "link": "project/location-based-app",
         "youtube": ""
     }
 ]
