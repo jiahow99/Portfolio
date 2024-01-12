@@ -3,12 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import PrimaryBtn from "../PrimaryBtn";
 import { PiYoutubeLogoFill } from "react-icons/pi";
+import CodeButtons from "./CodeButtons";
+import Tags from "./Tags";
 
 export default function Project({project}: any) {
-  const {youtube, src, title, description, href, link} = project;
+  const {youtube, src, title, description, href, link, techstacks} = project;
 
   return (
-    <div className="bg-secondary p-5 pb-3 rounded-lg">
+    <div className="flex flex-col justify-between bg-secondary p-5 pb-3 rounded-lg">
+      <div>
         {/* Image */}
         <Link href={youtube} target="_blank" className="w-full h-56 relative group">
           <img 
@@ -25,36 +28,12 @@ export default function Project({project}: any) {
         {/* Title */}
         <h1 className="text-2xl font-medium tracking-wide mt-4">{title}</h1>
         {/* Description */}
-        <p className="text-sm mt-2 line-clamp-2 ">{description}</p>
-        {!Array.isArray(href) ? (
-          // Code link
-          <div className="flex gap-2 items-end">
-            <PrimaryBtn href={href}>
-              Code 
-              <Image src="/icons/code.png" width={24} height={24} alt="code" />
-            </PrimaryBtn>
-            <Link href={link} className="border-2 border-white/40 h-fit px-6 py-2 rounded-full hover:border-white duration-300 group ease-in-out">
-              <p className="font-semibold text-white/80 group-hover:text-white">View</p>
-            </Link>
-          </div>
-        ):(
-          <div className="flex gap-3 items-end">
-            {/* Code link */}
-            <PrimaryBtn href={href[0]}>
-              Code 
-              <Image src="/icons/code.png" width={30} height={30} alt="code" />
-            </PrimaryBtn>
-            {/* API link */}
-            <PrimaryBtn href={href[1]}>
-              API 
-              <Image src="/icons/code.png" width={30} height={30} alt="code" />
-            </PrimaryBtn>
-            {/* View */}
-            <Link href={link} className="border-2 border-white/40 h-fit px-6 py-2 rounded-full hover:border-white duration-300 group ease-in-out">
-              <p className="font-semibold text-white/80 group-hover:text-white">View</p>
-            </Link>
-          </div>
-        )}
+        <p className="text-sm mt-2 line-clamp-2 text-slate-400">{description}</p>
+        {/* Tech Stacks */}
+        <Tags tags={techstacks} />
+      </div>
+      {/* Buttons */}
+      <CodeButtons href={href} link={link} />
     </div>
   )
 }

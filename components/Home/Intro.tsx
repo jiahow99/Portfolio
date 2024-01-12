@@ -29,7 +29,7 @@ export default function Intro() {
                     Software Developer
                 </p>
                 {/* Download CV */}
-                <PrimaryBtn href="/" classes="py-4">Download CV</PrimaryBtn>
+                <PrimaryBtn href="/Liong_Kah_How_Resume.pdf" classes="py-4">Download CV</PrimaryBtn>
             </div>
         </div>
         {/* Cube */}

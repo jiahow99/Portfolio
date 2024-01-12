@@ -8,6 +8,7 @@ export const websiteProjects = [
         "href": "https://github.com/jiahow99/Movie-App-Tailwind",
         "link": "/project/moviebites",
         "youtube": "https://drive.google.com/file/d/1LfHodyOy_HQza4VYGzn0Jif4JuPYMRjc/view",
+        "techstacks" : ['Laravel','TailwindCSS','Redis','Livewire']
     },
     {
         "title": "DreamBid",
@@ -17,7 +18,8 @@ export const websiteProjects = [
         "src": "/images/dreambid.jpg",
         "href": "https://github.com/jiahow99/Vue-Listing-App",
         "link": "/project/dreambid",
-        "youtube": "https://www.youtube.com/watch?v=-whHhK3ceSc"
+        "youtube": "https://www.youtube.com/watch?v=-whHhK3ceSc",
+        "techstacks" : ['Laravel','Vue','Inertia','GoogleMaps','TailwindCSS']
     },
     {
         "title": "BIOLINK",
@@ -26,7 +28,8 @@ export const websiteProjects = [
         "src": "/images/biolink.png",
         "href": "https://github.com/jiahow99/Reactivities-Net7React",
         "link": "/project/biolink",
-        "youtube": "https://www.youtube.com/watch?v=eZ95euAsrPA"
+        "youtube": "https://www.youtube.com/watch?v=eZ95euAsrPA",
+        "techstacks" : ['.NET7','NextJs','React','TailwindCSS']
     },
     {
         "title": "Weavify",
@@ -35,7 +38,8 @@ export const websiteProjects = [
         "src": "/images/websocket.png",
         "href": "https://github.com/jiahow99/Larave-Echo-Group-Chat",
         "link": "/project/weavify",
-        "youtube": "https://www.youtube.com/watch?v=Ft6ZwrjFRN8"
+        "youtube": "https://www.youtube.com/watch?v=Ft6ZwrjFRN8",
+        "techstacks" : ['Laravel','Websocket','Echo','TailwindCSS']
     }
 ]
 
@@ -51,7 +55,8 @@ export const mobileProjects = [
             "https://github.com/jiahow99/FYP-API"
         ],
         "link": "project/location-based-app",
-        "youtube": ""
+        "youtube": "",
+        "techstacks" : ['ReactNative','Firebase','Laravel','GoogleMaps']
     }
 ]
 
