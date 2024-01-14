@@ -3,14 +3,14 @@ import ExperienceCard from "./ExperienceCard";
 
 export default function Experiences() {
   return (
-    <div id="experiences" className="w-full pt-28 flex flex-col gap-3">
+    <div id="experiences" className="w-full pt-16 md:pt-28 flex flex-col gap-3">
         {/* Titles */}
         <p data-aos="fade-left" className="font-medium">WHAT I HAVE DONE SO FAR</p>
         <p data-aos="fade-left" className="text-5xl font-semibold">EXPERIENCE.</p>
         <p data-aos="fade-left" className="text-slate-200 text-lg tracking-wider">
-            I’m expertise in <span className="name">Backend Development</span>. 
+            {/* I’m expertise in <span className="name">Backend Development</span>. 
             I have total <span className="name">5 projects</span> experiences and excited to explore the 
-            <span className="name"> Web 3 !</span>
+            <span className="name"> Web 3 !</span> */}
         </p>
         {/* Timeline */}
         <div className="relative mt-10">

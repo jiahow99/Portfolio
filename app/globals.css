@@ -207,8 +207,8 @@ body {
   background: transparent;
   box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
   position: relative;
-  width: 240px;
-  height: 330px;
+  /* width: 240px; */
+  /* height: 330px; */
   border-radius: 16px;
   overflow: hidden;
 }
@@ -235,7 +235,7 @@ body {
   text-align: center;
   font-size: 20px;
   position: absolute;
-  top: 5.6em;
+  /* top: 5.6em; */
   left: 0;
   right: 0;
   color: rgb(255, 255, 255);
@@ -415,3 +415,45 @@ body {
 }
 
 /*************** Scroll To Top button ***************/
+
+
+/*************** Hamburger Btn ***************/
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger svg {
+  /* The size of the SVG defines the overall size */
+  height: 3em;
+  /* Define the transition for transforming the SVG */
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+  fill: none;
+  stroke: white;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  /* Define the transition for transforming the Stroke */
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+  transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+/*************** Hamburger Btn ***************/

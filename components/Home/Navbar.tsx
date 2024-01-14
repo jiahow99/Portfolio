@@ -35,7 +35,7 @@ export default function Navbar() {
             </div>
 
             {/* Links */}
-            <div className="flex gap-8 ">
+            <div className="hidden md:flex gap-8 ">
                 <button onClick={() => smoothScroll('')} className={pathname === '/' ? active : inactive}>
                     Overview
                 </button>
@@ -51,7 +51,7 @@ export default function Navbar() {
             </div>
 
             {/* Socials */}
-            <div className="flex gap-4">
+            <div className="hidden md:flex gap-4">
                 <a href="https://www.linkedin.com/in/kahhowliong/" target="_blank" className="text-2xl text-gray-400 hover:text-white duration-200">
                     <FaLinkedin />
                 </a>
@@ -65,6 +65,15 @@ export default function Navbar() {
                     <MdEmail  />
                 </a>
             </div>
+
+            {/* Hamburger Btn */}
+            <label className="hamburger">
+                <input type="checkbox" />
+                <svg viewBox="0 0 32 32">
+                    <path className="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                    <path className="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
         </nav>
     )
 }
