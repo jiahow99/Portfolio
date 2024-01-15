@@ -12,7 +12,7 @@ export default function CodeButtons({href, link}: any) {
             <Image src="/icons/code.png" width={24} height={24} alt="code" />
         </PrimaryBtn>
         {/* View */}
-        <Link prefetch={false} href={link} className="border-2 border-white/40 h-fit px-6 py-2 rounded-full hover:border-white duration-300 group ease-in-out">
+        <Link href={link} className="border-2 border-white/40 h-fit px-6 py-2 rounded-full hover:border-white duration-300 group ease-in-out">
             <p className="font-semibold text-white/80 group-hover:text-white">View</p>
         </Link>
     </div>
@@ -29,7 +29,7 @@ export default function CodeButtons({href, link}: any) {
             <Image src="/icons/code.png" width={24} height={24} alt="code" />
         </PrimaryBtn>
         {/* View */}
-        <Link prefetch={false} href={link} className="border-2 border-white/40 h-fit px-6 py-2 rounded-full hover:border-white duration-300 group ease-in-out">
+        <Link href={link} className="border-2 border-white/40 h-fit px-6 py-2 rounded-full hover:border-white duration-300 group ease-in-out">
             <p className="font-semibold text-white/80 group-hover:text-white">View</p>
         </Link>
     </div>
