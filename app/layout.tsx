@@ -22,7 +22,6 @@ export default function RootLayout({children}:any) {
         <Cursor />
         
         <Navbar />
-        <HamburgerMenu />
         
         {children}
 

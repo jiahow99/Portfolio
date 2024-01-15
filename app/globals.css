@@ -456,4 +456,9 @@ body {
   stroke-dasharray: 20 300;
   stroke-dashoffset: -32.42;
 }
+
+.hamburger-menu {
+  background: linear-gradient(162deg, rgba(54, 41, 96, 0.90), #1a2e3fd2 100%);
+  backdrop-filter: blur(20px);
+}
 /*************** Hamburger Btn ***************/

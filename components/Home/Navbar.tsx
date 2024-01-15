@@ -4,8 +4,13 @@ import { usePathname, useRouter } from "next/navigation";
 import { FaFacebook, FaInstagram , FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import HamburgerBtn from "./HamburgerBtn";
+import HamburgerMenu from "./HamburgerMenu";
+import { useState } from "react";
 
 export default function Navbar() {
+    // States
+    const [hamburgerOpen, setHamBurgerOpen] = useState(false);
+
     const pathname = usePathname();
     const router = useRouter();
 
@@ -68,7 +73,9 @@ export default function Navbar() {
             </div>
 
             {/* Hamburger Btn */}
-            <HamburgerBtn />
+            <HamburgerBtn setHamBurgerOpen={setHamBurgerOpen} hamburgerOpen={hamburgerOpen} />
+            <HamburgerMenu setHamBurgerOpen={setHamBurgerOpen} hamburgerOpen={hamburgerOpen} />
+
         </nav>
     )
 }
