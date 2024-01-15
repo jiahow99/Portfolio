@@ -21,12 +21,12 @@ export default function CodeButtons({href, link}: any) {
         {/* Code link */}
         <PrimaryBtn href={href[0]}>
             Code 
-            <Image src="/icons/code.png" width={30} height={30} alt="code" />
+            <Image src="/icons/code.png" width={24} height={24} alt="code" />
         </PrimaryBtn>
         {/* API link */}
         <PrimaryBtn href={href[1]}>
             API 
-            <Image src="/icons/code.png" width={30} height={30} alt="code" />
+            <Image src="/icons/code.png" width={24} height={24} alt="code" />
         </PrimaryBtn>
         {/* View */}
         <Link prefetch={false} href={link} className="border-2 border-white/40 h-fit px-6 py-2 rounded-full hover:border-white duration-300 group ease-in-out">

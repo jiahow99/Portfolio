@@ -20,7 +20,7 @@ export default function Project({project}: any) {
               className="w-full h-56 object-cover rounded-lg" 
           />
           <div className="absolute top-0 left-0 w-full h-full bg-black/60 backdrop-blur-sm text-white
-            rounded-lg duration-200 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center">
+            rounded-lg duration-200 opacity-80 md:opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center">
               <div className="text-2xl"><PiYoutubeLogoFill /></div>
               <p>Video</p>
           </div>
