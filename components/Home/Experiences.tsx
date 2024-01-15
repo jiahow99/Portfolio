@@ -16,14 +16,14 @@ export default function Experiences() {
         <div className="relative mt-10">
             {/* Line */}
             <div className="absolute left-1/2 -translate-x-1/2">
-                <div className="w-2 h-[1150px] bg-white rounded-full" />
+                <div className="w-2 h-[2000px] md:h-[1150px] bg-white rounded-full" />
             </div>
 
             {/* Bachelor's */}
             <ExperienceCard>
                 {/* Logo */}
                 <div className="absolute w-full flex justify-center pt-10" data-aos="zoom-in" data-aos-offset="300">
-                    <div className="w-20 h-20 rounded-full bg-white flex justify-center items-center">
+                    <div className="w-14 h-14 md:w-20 md:h-20 rounded-full bg-white flex justify-center items-center">
                         <Image 
                             src="/images/sunway.png"
                             width={70} height={70}
@@ -35,13 +35,13 @@ export default function Experiences() {
                 {/* Content */}
                 <div className="flex justify-between" data-aos="fade-right" data-aos-offset="300">
                     <div className='w-5/12 h-full pt-10'>
-                        <div className="w-11/12 ml-auto bg-[#23465A] border-b-4 border-white rounded-lg p-4">
-                            <p className="text-xl font-semibold">Bachelor’s Information Technology</p>
-                            <p>Sunway University</p>
+                        <div className="w-full md:w-11/12 ml-auto bg-[#23465A] border-b-4 border-white rounded-lg p-2 md:p-4">
+                            <p className="md:text-xl font-semibold">Bachelor’s Information Technology</p>
+                            <p className="text-xs md:text-base">Sunway University</p>
                             <div className="mt-1 w-fit text-sm px-3 py-1 rounded-lg bg-gray-500 text-gray-200">
                                 <p>CGPA 3.5</p>
                             </div>
-                            <ul className="list-disc p-4 text-sm flex flex-col gap-3 tracking-wide text-justify">
+                            <ul className="list-disc p-4 text-xs md:text-sm flex flex-col gap-3 tracking-wide md:text-justify">
                                 <li>Completed core subjects such as  
                                     <span className="text-primary"> Database Engineering</span>, 
                                     <span className="text-primary"> Human-Computer Interaction</span>, 
@@ -60,7 +60,7 @@ export default function Experiences() {
                             </ul>
                         </div>
                     </div>
-                    <div className="w-5/12 pt-14 text-lg font-medium">
+                    <div className="w-5/12 pt-14 text-xs md:text-lg font-medium">
                         <p>Jan 2021 - Dec 2023</p>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ export default function Experiences() {
             <ExperienceCard>
                 {/* Logo */}
                 <div className="absolute w-full flex justify-center pt-20" data-aos="zoom-in" >
-                    <div className="w-20 h-20 rounded-full bg-white flex justify-center items-center">
+                    <div className="w-14 h-14 md:w-20  md:h-20 rounded-full bg-white flex justify-center items-center">
                         <Image 
                             src="/images/lnworldwide.jpg"
                             width={75} height={75}
@@ -81,14 +81,14 @@ export default function Experiences() {
                 </div>
                 {/* Content */}
                 <div className="flex justify-between" data-aos="fade-left">
-                    <div className="w-5/12 pt-24 text-lg font-medium text-right">
+                    <div className="w-5/12 pt-24 text-xs md:text-lg font-medium text-right">
                         <p>Jan 2023 - Mar 2023</p>
                     </div>
                     <div className='w-5/12 h-full pt-20 ml-auto'>
-                        <div className="w-11/12 mr-auto bg-[#23465A] border-b-4 border-white rounded-lg p-4">
-                            <p className="text-xl font-semibold">Web Developer Intern</p>
-                            <p>LN WorldWide Resources Company</p>
-                            <ul className="list-disc p-4 text-sm flex flex-col gap-1 tracking-wide ">
+                        <div className="w-full md:w-11/12 mr-auto bg-[#23465A] border-b-4 border-white rounded-lg p-2 md:p-4">
+                            <p className="md:text-xl font-semibold">Web Developer Intern</p>
+                            <p className="text-xs md:text-base">LN WorldWide Resources Company</p>
+                            <ul className="list-disc p-4 text-xs md:text-sm flex flex-col gap-1 tracking-wide ">
                                 <li>Interned as a <span className="text-primary"> website developer</span>, 
                                     specializing in 
                                     <span className="text-primary"> front-end development</span>.
@@ -108,7 +108,7 @@ export default function Experiences() {
             <ExperienceCard>
                 {/* Logo */}
                 <div data-aos="zoom-in" className="absolute w-full flex justify-center pt-20">
-                    <div className="w-20 h-20 rounded-full bg-white flex justify-center items-center">
+                    <div className="w-14 h-14 md:w-20 md:h-20 rounded-full bg-white flex justify-center items-center">
                         <Image 
                             src="/images/sunway.png"
                             width={70} height={70}
@@ -120,13 +120,13 @@ export default function Experiences() {
                 {/* Content */}
                 <div className="flex justify-between" data-aos="fade-right">
                     <div className='w-5/12 h-full pt-20'>
-                        <div className="w-11/12 ml-auto bg-[#23465A] border-b-4 border-white rounded-lg p-4">
-                            <p className="text-xl font-semibold">Australian Matriculation (AUSMAT)</p>
-                            <p>Sunway University</p>
+                        <div className="w-full md:w-11/12 ml-auto bg-[#23465A] border-b-4 border-white rounded-lg p-2 md:p-4">
+                            <p className="md:text-xl font-semibold">Australian Matriculation (AUSMAT)</p>
+                            <p className="text-xs md:text-base">Sunway University</p>
                             <div className="mt-1 w-fit text-sm px-3 py-1 rounded-lg bg-gray-500 text-gray-200">
                                 <p>ATAR 82.00</p>
                             </div>
-                            <ul className="list-disc p-4 text-sm flex flex-col gap-1 tracking-wide ">
+                            <ul className="list-disc p-4 text-xs md:text-sm flex flex-col gap-1 tracking-wide ">
                                 <li>Completed Australian Matriculation at Sunway University.</li>
                                 <li>Studied <span className="text-primary"> mathematic methods</span> for programming.</li>
                                 <li>Take course of <span className="text-primary"> General Computer Science</span>.</li>
@@ -135,7 +135,7 @@ export default function Experiences() {
                             </ul>
                         </div>
                     </div>
-                    <div className="w-5/12 pt-24 text-lg font-medium">
+                    <div className="w-5/12 pt-24 text-xs md:text-lg font-medium">
                         <p>Mar 2020 - Nov 2020</p>
                     </div>
                 </div>
