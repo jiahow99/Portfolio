@@ -16,7 +16,7 @@ export default function Overview() {
             <span className="name"> Web 3 !</span>
         </p>
         {/* Cards */}
-        <div className="grid grid-cols-2 gap-3 justify-between items-center flex-wrap pt-5">
+        <div className="grid md:flex grid-cols-2 gap-3 justify-between items-center flex-wrap pt-5">
             <Card name="Backend Developer">
                 <FaCode />
             </Card>

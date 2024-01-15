@@ -2,6 +2,8 @@
 
 export default function HamburgerMenu() {
   return (
-    <div className=""></div>
+    <div className="fixed top-0 left-0 w-full h-[130vh] bg-black z-50">
+
+    </div>
   )
 }
