@@ -6,7 +6,7 @@ export default function HamburgerBtn({setHamBurgerOpen, hamburgerOpen}: any) {
   }
 
   return (
-    <div onClick={open} className="block md:hidden z-50">
+    <div onClick={open} className="block md:hidden">
       <label className="hamburger">
           <input type="checkbox" />
           <svg viewBox="0 0 32 32">
