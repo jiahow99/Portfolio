@@ -22,7 +22,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-secondary w-full py-7">
+    <footer className="bg-secondary w-full py-7 hidden md:block">
       <div className="w-10/12 mx-auto flex justify-between">
         {/* Profile */}
         <div className="flex flex-col gap-3">

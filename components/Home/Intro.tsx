@@ -14,7 +14,7 @@ export default function Intro() {
             </div>
             {/* Name */}
             <div className="flex flex-col gap-5">
-                <div className="flex gap-3 text-6xl font-medium">
+                <div className="flex flex-col md:flex-row gap-3 text-2xl md:text-6xl font-medium flex-wrap">
                     <p>Hi, I&apos;m</p>
                     <Typewriter
                         options={{
@@ -25,7 +25,7 @@ export default function Intro() {
                         }}
                     />
                 </div>
-                <p className="text-3xl name font-semibold">
+                <p className="text-2xl md:text-3xl name font-semibold hidden md:block">
                     Software Developer
                 </p>
                 {/* Download CV */}
@@ -33,7 +33,7 @@ export default function Intro() {
             </div>
         </div>
         {/* Cube */}
-        <div className="absolute right-72 top-60 scale-[3]">
+        <div className="absolute right-24 top-60 md:right-72 md:top-60 scale-[1.6] md:scale-[3]">
             <Cube />
         </div>
     </div>

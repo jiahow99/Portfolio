@@ -3,8 +3,14 @@ import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { FaFacebook, FaInstagram , FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import HamburgerBtn from "./HamburgerBtn";
+import HamburgerMenu from "./HamburgerMenu";
+import { useState } from "react";
 
 export default function Navbar() {
+    // States
+    const [hamburgerOpen, setHamBurgerOpen] = useState(false);
+
     const pathname = usePathname();
     const router = useRouter();
 
@@ -35,7 +41,7 @@ export default function Navbar() {
             </div>
 
             {/* Links */}
-            <div className="flex gap-8 ">
+            <div className="hidden md:flex gap-8 ">
                 <button onClick={() => smoothScroll('')} className={pathname === '/' ? active : inactive}>
                     Overview
                 </button>
@@ -51,7 +57,7 @@ export default function Navbar() {
             </div>
 
             {/* Socials */}
-            <div className="flex gap-4">
+            <div className="hidden md:flex gap-4">
                 <a href="https://www.linkedin.com/in/kahhowliong/" target="_blank" className="text-2xl text-gray-400 hover:text-white duration-200">
                     <FaLinkedin />
                 </a>
@@ -65,6 +71,11 @@ export default function Navbar() {
                     <MdEmail  />
                 </a>
             </div>
+
+            {/* Hamburger Btn */}
+            <HamburgerBtn setHamBurgerOpen={setHamBurgerOpen} hamburgerOpen={hamburgerOpen} />
+            <HamburgerMenu setHamBurgerOpen={setHamBurgerOpen} hamburgerOpen={hamburgerOpen} />
+
         </nav>
     )
 }

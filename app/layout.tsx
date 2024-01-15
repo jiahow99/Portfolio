@@ -7,6 +7,7 @@ import Navbar from '@/components/Home/Navbar';
 import Footer from '@/components/Home/Footer';
 import NextNProgress from 'nextjs-progressbar';
 import ScrollToTop from '@/components/ScrollToTop';
+import HamburgerMenu from '@/components/Home/HamburgerMenu';
 
 export const metadata: Metadata = {
   title: 'Kah How - Software Developer',
@@ -21,7 +22,7 @@ export default function RootLayout({children}:any) {
         <Cursor />
         
         <Navbar />
-
+        
         {children}
 
         <Footer />

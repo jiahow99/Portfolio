@@ -26,7 +26,7 @@ export default function ScrollToTop() {
     };
 
   return showButton && (
-    <div className={`fixed bottom-12 right-16 scale-150 duration-200`}>
+    <div className="fixed bottom-5 md:bottom-12 right-5 md:right-16 md:scale-150 duration-200">
         <div className="animate-bounce">
             <button onClick={scrollToTop} className="scroll-top-btn rotate-90">
                 <div className="scroll-top-btn-box">
