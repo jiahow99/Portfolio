@@ -6,6 +6,8 @@ import { MdEmail } from "react-icons/md";
 import HamburgerBtn from "./HamburgerBtn";
 import HamburgerMenu from "./HamburgerMenu";
 import { useState } from "react";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { ImWhatsapp } from "react-icons/im";
 
 export default function Navbar() {
     // States
@@ -61,8 +63,8 @@ export default function Navbar() {
                 <a href="https://www.linkedin.com/in/kahhowliong/" target="_blank" className="text-2xl text-gray-400 hover:text-white duration-200">
                     <FaLinkedin />
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=100003875460257" target="_blank" className="text-2xl text-gray-400 hover:text-white duration-200">
-                    <FaFacebook />
+                <a href="https://api.whatsapp.com/send?phone=0187754338" target="_blank" className="text-2xl text-gray-400 hover:text-white duration-200">
+                    <ImWhatsapp />
                 </a>
                 <a href="https://www.instagram.com/jia_hao316/" target="_blank" className="text-2xl text-gray-400 hover:text-white duration-200">
                     <FaInstagram    />

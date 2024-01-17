@@ -2,11 +2,12 @@
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa"
 import { MdEmail } from "react-icons/md"
 import { IoIosClose } from "react-icons/io";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 export default function HamburgerMenu({hamburgerOpen=false, setHamBurgerOpen}: any) {
   return (
     <div className={`hamburger-menu fixed top-0 left-0 w-screen h-screen flex flex-col justify-between 
-    items-center z-40 py-20 duration-200 ${hamburgerOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+    items-center z-40 py-20 duration-300 ${hamburgerOpen ? 'translate-x-0' : 'translate-x-full'}`}>
       {/* Close */}
       <div onClick={() => setHamBurgerOpen(false)} className="text-7xl absolute top-2 right-2">
         <IoIosClose />
@@ -36,7 +37,7 @@ export default function HamburgerMenu({hamburgerOpen=false, setHamBurgerOpen}: a
               <FaLinkedin />
           </a>
           <a href="https://www.facebook.com/profile.php?id=100003875460257" target="_blank" className="text-4xl text-gray-400 hover:text-white duration-200">
-              <FaFacebook />
+            <IoLogoWhatsapp />
           </a>
           <a href="https://www.instagram.com/jia_hao316/" target="_blank" className="text-4xl text-gray-400 hover:text-white duration-200">
               <FaInstagram    />
