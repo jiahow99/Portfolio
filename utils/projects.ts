@@ -55,7 +55,7 @@ export const mobileProjects = [
             "https://github.com/jiahow99/FYP-API"
         ],
         "link": "project/location-based-app",
-        "youtube": "",
+        "youtube": "https://youtu.be/M4nKKFzqvms",
         "techstacks" : ['ReactNative','Firebase','Laravel','GoogleMaps']
     }
 ]
